@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+body {
+  margin: 0px;
+}
+@keyframes r_w {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 75vh;
+  }
+}
+
+@keyframes ani_1 {
+  0% {
+    height: 0px;
+
+    overflow: hidden;
+  }
+  100% {
+    height: 50px;
+
+    overflow: visible;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+#header_1 {
+  font-family: "Michroma", sans-serif;
+  padding-top: 15px;
+  padding-left: 25px;
+  height: 75vh;
+
+  background-image: url(CITY_1_Rocket_Animation.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: r_w 3s cubic-bezier(0.075, 0.82, 0.165, 1) 1;
+
+  background-attachment: fixed;
+
+  overflow: hidden;
+}
+#header_1 div {
+  display: inline-block;
+}
+#name {
+  margin-left: -3px;
+  padding-top: 15px;
+  text-align: center;
+  height: 50px;
+  width: 150px;
+  box-sizing: border-box;
+  border-radius: 5%;
+  opacity: 50%;
+  background-color: beige;
+
+  animation: ani_1 1s cubic-bezier(0.075, 0.82, 0.165, 1) 1;
+}
+
+.nav_bar {
+  margin-left: 5px;
+  margin-right: 5px;
+
+  opacity: 65%;
+
+  float: right;
+  padding-top: 15px;
+  text-align: center;
+  height: 50px;
+  width: 150px;
+  box-sizing: border-box;
+  border-radius: 5%;
+
+  background-color: beige;
+  animation: ani_1 1s ease-in-out 1;
+}
+#x {
+  margin-right: 16px;
+}
+
+.nav_bar a {
+  text-decoration: none;
+  border: none;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+#name:hover,
+.nav_bar:hover {
+  opacity: 90%;
+}
